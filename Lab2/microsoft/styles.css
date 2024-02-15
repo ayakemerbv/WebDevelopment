@@ -126,6 +126,8 @@ a:hover:not(.signin, .check-check){
 
 .lower h2{
     font-weight: 500;
+    height: 1.5rem;
+    margin-top: 20px;
 }
 .lower img{
     width: 324px;
