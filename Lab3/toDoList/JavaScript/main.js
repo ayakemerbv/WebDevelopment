@@ -1,20 +1,18 @@
 
 var cnt = 1;
 var last = null;
+
 function saveTag(el){
     last = el.value;
 }
+
 function buttonSave(el){
     createList(last);
 }
 
 
-function printArr(el){
-    console.log(arr);
-}
-
 function createList(last){
-    var newDiv = document.createElement("div"); // создаем новый элемент div
+    var newDiv = document.createElement("div"); 
     newDiv.className = cnt+"chek";
     cnt++;
     var save = '<input id = "bx" onclick = "overLine(this)" type="checkbox"><p class = "Tags" >'+last+'</p><button onclick = "deleteById(this)" class = "del"></button>';

@@ -1,7 +1,7 @@
 
 <div class="card" *ngFor="let product of products">
     <h3 style="margin-top: 0">
-        <a [title]="product.name + ' details'">
+        <a [title]="product.name + ' details'" [href]="product.src">
             {{ product.name }}
         </a>
     </h3>

@@ -27,7 +27,7 @@ export const products = [
     id: 2,
     name: 'Смартфон Xiaomi Redmi 10C 4 ГБ/128 ГБ серый',
     price: 72129,
-    img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hbc/h0a/49939925205022/xiaomi-redmi-10c-4-gb-128-gb-seryj-104417231-1.jpg',
+    img: 'https://resources.cdn-kaspi.kz/img/m/p/h65/h5a/64373843132446.jpg?format=gallery-large',
     description: 'диагональ: 6.71 дюйм\n' +
         'размер оперативной памяти: 4 ГБ\n' +
         'процессор: 8-ядерный Qualcomm Snapdragon 680\n' +
@@ -53,7 +53,7 @@ export const products = [
     id: 4,
     name: 'Смартфон Samsung Galaxy A13 4 ГБ/128 ГБ черный',
     price: 87490,
-    img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h90/h49/49613711966238/samsung-galaxy-a13-4-gb-128-gb-chernyi-104253279-1.jpg',
+    img: 'https://resources.cdn-kaspi.kz/img/m/p/h1c/hac/64381277929502.jpg?format=gallery-large',
     description: 'диагональ: 6.6 дюйм\n' +
         'размер оперативной памяти: 4 ГБ\n' +
         'процессор: 8-ядерный Exynos 850\n' +
@@ -66,7 +66,7 @@ export const products = [
     id: 5,
     name: 'Смартфон Apple iPhone 13 128Gb черный',
     price: 376200,
-    img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h49/hc0/46392662523934/apple-iphone-13-128gb-cernyj-102298404-1-Container.jpg',
+    img: 'https://resources.cdn-kaspi.kz/img/m/p/h32/h70/84378448199710.jpg?format=gallery-large',
     description: 'диагональ: 6.1 дюйм\n' +
         'размер оперативной памяти: 4 ГБ\n' +
         'процессор: 6-ядерный Apple A15 Bionic\n' +
@@ -79,7 +79,7 @@ export const products = [
     id: 6,
     name: 'Смартфон Apple iPhone 14 Pro Max 256Gb фиолетовый',
     price: 705570,
-    img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h00/h18/62948780834846/apple-iphone-14-pro-max-128gb-fioletovyj-106363342-1.jpg',
+    img: 'https://resources.cdn-kaspi.kz/img/m/p/h19/h85/64508108931102.jpg?format=gallery-large',
     description: 'диагональ: 6.7 дюйм\n' +
         'размер оперативной памяти: 6 ГБ\n' +
         'процессор: 6-ядерный Apple A16 Bionic\n' +
