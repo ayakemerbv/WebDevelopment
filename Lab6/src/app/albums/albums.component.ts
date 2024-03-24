@@ -30,21 +30,29 @@ export class AlbumsComponent implements OnInit{
     this.getAlbums();
   }
 
-  removeAlbum(id: number){
-    this.albums = this.albums.filter((x) => x.id !== id);
-  }
-
   addAlbum(){
-    if(this.newAlbum.title.length == 0 || this.newAlbum.id <= this.albums[this.albums.length-1].id)
+    if(this.newAlbum.title.length == 0 || this.newAlbum.id <= this.albums[this.albums.length-1].id) //|| this.albums.some(album => album.id === this.newAlbum.id)
       return;
 
     this.newAlbum.userId = this.albums[0].userId;
-
     this.loaded = false;
     this.albumService.addAlbum(this.newAlbum).subscribe((album) =>{
-      this.albums.unshift(album);
+      this.albums.push(album);
       this.loaded = true;
       this.newAlbum = {} as Album;
     })
   }
+
+  
+  removeAlbum(id: number){
+    this.loaded = false;
+    this.albumService.deleteAlbum(id).subscribe(() => {
+      this.albums = this.albums.filter(album => album.id !== id);
+      this.loaded = true;
+    })
+  }
+
+    // removeAlbum(id: number){
+  //   this.albums = this.albums.filter((x) => x.id !== id);
+  // }
 }

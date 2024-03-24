@@ -5,7 +5,7 @@
   <ul>
     <h1>Album #{{albumID}} photos</h1>
     <li *ngFor="let photo of photos">
-      <img src="{{photo.url}}" alt="album-img">
+      <img [src]="photo.url" alt="album-img">
     </li>
   </ul>
 

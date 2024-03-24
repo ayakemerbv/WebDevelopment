@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {Album, Photo} from "./models";
-import {AlbumsComponent} from "./albums/albums.component";
 
 @Injectable({
   providedIn: 'root'
@@ -29,5 +28,9 @@ export class AlbumsService {
 
   updateAlbum(id: number, edittedAlbum: Album){
     return this.client.put<Album>(`${this.BASE_URL}/albums/${id}`, edittedAlbum)
+  }
+
+  deleteAlbum(id: number): Observable<void> {
+    return this.client.delete<void>(`${this.BASE_URL}/albums/${id}`);
   }
 }
